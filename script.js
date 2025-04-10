@@ -1,6 +1,5 @@
 // Wait for DOM to load
 document.addEventListener("DOMContentLoaded", () => {
-  // Navigation menu toggle
   const hamburger = document.querySelector(".hamburger")
   const navLinks = document.querySelector(".nav-links")
 
@@ -9,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     hamburger.classList.toggle("active")
   })
 
-  // Close menu when clicking on a link
   const navItems = document.querySelectorAll(".nav-links a")
   navItems.forEach((item) => {
     item.addEventListener("click", () => {
@@ -18,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
-  // Active link on scroll
   const sections = document.querySelectorAll("section")
   const navLi = document.querySelectorAll(".nav-links li a")
 
@@ -41,11 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
-  // Theme toggle
   const themeToggle = document.querySelector(".theme-toggle")
   const body = document.body
 
-  // Check for saved theme preference
   if (localStorage.getItem("theme") === "dark") {
     body.classList.add("dark")
     themeToggle.innerHTML = '<i class="fas fa-sun"></i>'
@@ -63,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 
-  // Project filtering
   const filterBtns = document.querySelectorAll(".filter-btn")
   const projectItems = document.querySelectorAll(".project-item")
 
