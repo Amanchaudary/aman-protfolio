@@ -1,29 +1,3 @@
-/* Base Styles */
-:root {
-  --primary-color: #4a6cf7;
-  --secondary-color: #6c757d;
-  --dark-color: #212529;
-  --light-color: #f8f9fa;
-  --success-color: #28a745;
-  --danger-color: #dc3545;
-  --body-color: #f9f9f9;
-  --text-color: #333;
-  --border-color: #e9ecef;
-  --transition: all 0.3s ease;
-  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --border-radius: 8px;
-}
-
-.dark {
-  --primary-color: #6d8dff;
-  --secondary-color: #adb5bd;
-  --dark-color: #f8f9fa;
-  --light-color: #212529;
-  --body-color: #121212;
-  --text-color: #f8f9fa;
-  --border-color: #343a40;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -61,15 +35,40 @@ img {
   height: auto;
   display: block;
 }
+section {
+  padding: 100px 0;
+}
+
+/* Base Styles */
+:root {
+  --primary-color: #4a6cf7;
+  --secondary-color: #6c757d;
+  --dark-color: #212529;
+  --light-color: #f8f9fa;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --body-color: #f9f9f9;
+  --text-color: #333;
+  --border-color: #e9ecef;
+  --transition: all 0.3s ease;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+}
+
+.dark {
+  --primary-color: #6d8dff;
+  --secondary-color: #adb5bd;
+  --dark-color: #f8f9fa;
+  --light-color: #212529;
+  --body-color: #121212;
+  --text-color: #f8f9fa;
+  --border-color: #343a40;
+}
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-section {
-  padding: 100px 0;
 }
 
 .section-header {
@@ -185,28 +184,6 @@ nav {
 .nav-links a.active::after {
   width: 100%;
 }
-
-.theme-toggle {
-  margin-left: 30px;
-  cursor: pointer;
-  font-size: 1.2rem;
-  color: var(--dark-color);
-}
-
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
-
-.hamburger span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: var(--dark-color);
-  margin: 5px 0;
-  transition: var(--transition);
-}
-
 /* Hero Section */
 .hero {
   padding-top: 150px;
@@ -244,6 +221,7 @@ nav {
   font-size: 1.1rem;
   margin-bottom: 30px;
   max-width: 500px;
+  color: #0c30bf;
 }
 
 .hero-buttons {
@@ -287,6 +265,11 @@ nav {
 }
 
 /* About Section */
+.about h2 {
+  color: rgb(216, 24, 69);
+  font-style: oblique;
+  border-radius: 4px solid black;
+}
 .about-content {
   display: flex;
   align-items: center;
@@ -738,4 +721,3 @@ footer {
     flex-wrap: wrap;
   }
 }
-
