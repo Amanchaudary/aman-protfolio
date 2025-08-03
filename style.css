@@ -15,7 +15,16 @@ body {
   background-color: var(--body-color);
   transition: var(--transition);
 }
-
+.logo {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #22de1f, #6366f1); /* 紫〜青のグラデ */
+  border-radius: 1.25rem;
+  cursor: pointer;
+  box-shadow: 0 12px 30px -5px rgba(19, 185, 44, 0.5);
+  transition: transform 0.25s ease, filter 0.25s ease;
+  text-align: center;
+}
 a {
   text-decoration: none;
   color: var(--primary-color);
@@ -63,12 +72,6 @@ section {
   --body-color: #121212;
   --text-color: #f8f9fa;
   --border-color: #343a40;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 .section-header {
@@ -131,6 +134,11 @@ header {
   box-shadow: var(--box-shadow);
   z-index: 1000;
   transition: var(--transition);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 header .container {
@@ -202,9 +210,9 @@ nav {
 }
 
 .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: 2rem;
   margin-bottom: 15px;
-  color: var(--dark-color);
+  color: var(--primary-color);
 }
 
 .hero-content h1 span {
@@ -212,9 +220,10 @@ nav {
 }
 
 .hero-content h2 {
-  font-size: 2rem;
+  font-size: 25px;
   margin-bottom: 20px;
-  color: var(--secondary-color);
+  color: #080cecde;
+  cursor: pointer;
 }
 
 .hero-content p {
@@ -232,18 +241,18 @@ nav {
 
 .social-icons {
   display: flex;
-  gap: 15px;
+  gap: 60px;
 }
 
 .social-icons a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 95px;
+  height: 45px;
   border-radius: 50%;
   background-color: var(--light-color);
-  color: var(--dark-color);
+  color: #310ecd;
   transition: var(--transition);
 }
 
@@ -266,8 +275,8 @@ nav {
 
 /* About Section */
 .about h2 {
-  color: rgb(216, 24, 69);
-  font-style: oblique;
+  color: #c813e0;
+  font-style: normal;
   border-radius: 4px solid black;
 }
 .about-content {
