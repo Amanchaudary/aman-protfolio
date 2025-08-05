@@ -48,7 +48,6 @@ section {
   padding: 100px 0;
 }
 
-
 /* Base Styles */
 :root {
   --primary-color: #4a6cf7;
@@ -401,10 +400,6 @@ nav {
   font-weight: 600;
   color: var(--primary-color);
 }
-
-/* Projects Section */
-
-
 /* Contact Section */
 .contact {
     padding: 60px 20px;
