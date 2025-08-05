@@ -86,28 +86,48 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   // Form submission
-  const contactForm = document.getElementById("contactForm")
+   document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const statusEl = document.getElementById("formStatus");
+    statusEl.textContent = "Sending...";
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-  if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
-      e.preventDefault()
+    if (!name || !email || !subject || !message) {
+      statusEl.textContent = "Please fill in all fields.";
+      return;
+    }
 
-      // Get form values
-      const name = document.getElementById("name").value
-      const email = document.getElementById("email").value
-      const subject = document.getElementById("subject").value
-      const message = document.getElementById("message").value
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      subject: subject,
+      message: message,
+      // optionally: to_email: "yourgmail@gmail.com" if your template uses it
+    };
 
-      // Simple form validation
-      if (name && email && subject && message) {
-        // In a real application, you would send this data to a server
-        alert("Thank you for your message! I will get back to you soon.")
-        contactForm.reset()
-      } else {
-        alert("Please fill in all fields.")
-      }
-    })
-  }
+    emailjs
+      .send("amanecdy@gmail.com", "YOUR_TEMPLATE_ID", templateParams)
+      .then(
+        function (response) {
+          statusEl.textContent = "Message sent! Thank you."; 
+          document.getElementById("contactForm").reset();
+        },
+        function (error) {
+          console.error("EmailJS error", error);
+          statusEl.innerHTML =
+            "Failed to send. You can also <a href='mailto:amanecdy@gmail.com?subject=" +
+            encodeURIComponent(subject) +
+            "&body=" +
+            encodeURIComponent(
+              "Name: " + name + "\nEmail: " + email + "\n\n" + message
+            ) +
+            "'>send via email</a>.";
+        }
+      );
+  });
 
   // Smooth scrolling for all anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
