@@ -1,164 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aman Chaudhary | Web Developer</title>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aman Chaudhary | Web Developer</title>
 
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <body>
-    <!-- NAVBAR -->
-    <header class="header">
-      <div class="container nav-container">
-        <h1 class="logo">アマン</h1>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <nav>
-          <input type="checkbox" id="menu-toggle" />
-          <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+<body>
+  <!-- NAVBAR -->
+  <header class="header">
+    <div class="container nav-container">
+      <h1 class="logo">アマン</h1>
 
-          <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+      <nav>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <h1>
+          こんにちは, 私は <span class="highlight">チャウダリ アマン</span>
+        </h1>
+        <h2>Frontend & Backend Developer</h2>
+
+        <p>
+          日本に来て6年、プログラミングの世界に出会い、Web開発の魅力に夢中になりました。
+          現在はエンジニアとして日本で活躍することを目指し、日々学習と成長を続けています。
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary-btn">View My Work</a>
+          <a href="#contact" class="btn secondary-btn">Contact Me</a>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://github.com/Amanchaudary" class="social-item">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://vercel.com/amanchaudarys-projects" class="social-item">
+            <i class="fas fa-cloud"></i>
+            <span>Vercel</span>
+          </a>
+          <a href="https://app.netlify.com/teams/amanchaudary/projects" class="social-item">
+            <i class="fas fa-globe"></i>
+            <span>Netlify</span>
+          </a>
+        </div>
       </div>
-    </header>
 
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="container hero-container">
-        <div class="hero-text">
-          <h1>こんにちは, 私は <span class="highlight">チャウダリ アマン</span></h1>
-          <h2>Frontend & Backend Developer</h2>
+      <div class="hero-img">
+        <img src="aman.jpg" alt="Aman Profile" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section-title">INTRODUCTION</h2>
+
+      <div class="about-container">
+        <img src="aman2.JPG" class="about-img" alt="About Me" />
+
+        <div class="about-text">
+          <h3>IT エンジニア / 千葉在住</h3>
+          <p>コードを書くことと新しい技術を学ぶことが大好きです。</p>
 
           <p>
-            日本に来て6年、プログラミングの世界に出会い、Web開発の魅力に夢中になりました。
-            現在はエンジニアとして日本で活躍することを目指し、日々学習と成長を続けています。
+            I enjoy building clean, modern, and responsive web applications.
+            My goal is to become a professional engineer in Japan and
+            contribute to impactful projects.
           </p>
 
-          <div class="hero-buttons">
-            <a href="#projects" class="btn primary-btn">View My Work</a>
-            <a href="#contact" class="btn secondary-btn">Contact Me</a>
-          </div>
-
-          <div class="social-icons">
-            <a href="https://github.com/Amanchaudary"><i class="fab fa-github"></i></a>
-            <a href="https://vercel.com/amanchaudarys-projects"><i class="fas fa-cloud"></i></a>
-            <a href="https://app.netlify.com/teams/amanchaudary/projects"><i class="fas fa-globe"></i></a>
-          </div>
-        </div>
-
-        <div class="hero-img">
-          <img src="aman.jpg" alt="Aman Profile" />
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="about section">
-      <div class="container">
-        <h2 class="section-title">INTRODUCTION</h2>
-
-        <div class="about-container">
-          <img src="aman2.JPG" class="about-img" alt="About Me">
-
-          <div class="about-text">
-            <h3>IT エンジニア / 千葉在住</h3>
-            <p>コードを書くことと新しい技術を学ぶことが大好きです。</p>
-
+          <div class="about-grid">
             <p>
-              I enjoy building clean, modern, and responsive web applications.
-              My goal is to become a professional engineer in Japan and contribute to impactful projects.
+              <i class="fas fa-user"></i> Name: <span>Aman Chaudhary</span>
             </p>
-
-            <div class="about-grid">
-              <p><i class="fas fa-user"></i> Name: <span>Aman Chaudhary</span></p>
-              <p><i class="fas fa-envelope"></i> Email: <span>amanecdy@gmail.com</span></p>
-              <p><i class="fas fa-map-marker-alt"></i> Location: <span>Chiba, Japan</span></p>
-              <p><i class="fas fa-graduation-cap"></i> Education: <span>日本国際工科専門学校</span></p>
-            </div>
-
-            <a href="rirekisyo.pdf" class="btn primary-btn">Download 履歴書</a>
-            <a href="workexperence.pdf" class="btn primary-btn">Download 職務経歴書</a>
+            <p>
+              <i class="fas fa-envelope"></i> Email:
+              <span>amanecdy@gmail.com</span>
+            </p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Location:
+              <span>Chiba, Japan</span>
+            </p>
+            <p>
+              <i class="fas fa-graduation-cap"></i> Education:
+              <span>日本国際工科専門学校</span>
+            </p>
           </div>
+
+          <a href="rirekisyo.pdf" class="btn primary-btn">Download 履歴書</a>
+          <a href="workexperence.pdf" class="btn primary-btn">Download 職務経歴書</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="skills section">
-      <div class="container">
-        <h2 class="section-title">私のスキル</h2>
+  <!-- SKILLS -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2 class="section-title">私のスキル</h2>
 
-        <div class="skills-grid">
-          <div class="skill-card">
-            <i class="fab fa-html5 skill-icon"></i>
-            <h3>HTML5</h3>
-            <div class="progress"><span style="width:95%"></span></div>
-          </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5 skill-icon"></i>
+          <h3>HTML5</h3>
+          <div class="progress"><span style="width: 95%"></span></div>
+        </div>
 
-          <div class="skill-card">
-            <i class="fab fa-css3-alt skill-icon"></i>
-            <h3>CSS3</h3>
-            <div class="progress"><span style="width:90%"></span></div>
-          </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt skill-icon"></i>
+          <h3>CSS3</h3>
+          <div class="progress"><span style="width: 90%"></span></div>
+        </div>
 
-          <div class="skill-card">
-            <i class="fab fa-js skill-icon"></i>
-            <h3>JavaScript</h3>
-            <div class="progress"><span style="width:95%"></span></div>
-          </div>
-
-          <div class="skill-card">
-            <i class="fab fa-react skill-icon"></i>
-            <h3>React</h3>
-            <div class="progress"><span style="width:85%"></span></div>
+        <!-- Bootstrap -->
+        <div class="skill-card">
+          <i class="fab fa-bootstrap skill-icon"></i>
+          <h3>Bootstrap</h3>
+          <div class="progress">
+            <span style="width:85%"></span>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="contact section">
-      <div class="container">
-        <h2 class="section-title">Contact Me</h2>
 
-        <div class="contact-container">
-          <div class="contact-info">
-            <h3>Get In Touch</h3>
-            <p>質問・仕事の依頼など、気軽にご連絡ください。</p>
-
-            <p><i class="fas fa-map-marker-alt"></i> Chiba, Japan</p>
-            <p><i class="fas fa-envelope"></i> amanecdy@gmail.com</p>
-            <p><i class="fas fa-phone"></i> 080 7681 0521</p>
-          </div>
-
-          <!-- CONTACT FORM -->
-          <form class="contact-form">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <input type="text" placeholder="Subject" required />
-            <textarea placeholder="Your Message" required></textarea>
-
-            <button class="btn primary-btn">Send Message</button>
-          </form>
+        <div class="skill-card">
+          <i class="fab fa-js skill-icon"></i>
+          <h3>JavaScript</h3>
+          <div class="progress"><span style="width: 95%"></span></div>
         </div>
-      </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <p>© 2025 Aman Cdy — All Rights Reserved.</p>
-    </footer>
-  </body>
+        <div class="skill-card">
+          <i class="fab fa-react skill-icon"></i>
+          <h3>React</h3>
+          <div class="progress"><span style="width: 85%"></span></div>
+        </div>
+        <!-- Node.js -->
+        <div class="skill-card">
+          <i class="fab fa-node-js skill-icon"></i>
+          <h3>Node.js</h3>
+          <div class="progress"><span style="width:90%"></span></div>
+        </div>
+
+        <!-- Express.js -->
+        <div class="skill-card">
+          <i class="fas fa-server skill-icon"></i>
+          <h3>Express.js</h3>
+          <div class="progress"><span style="width:85%"></span></div>
+        </div>
+
+        <!-- MySQL -->
+        <div class="skill-card">
+          <i class="fas fa-database skill-icon"></i>
+          <h3>MySQL</h3>
+          <div class="progress"><span style="width:80%"></span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>質問・仕事の依頼など、気軽にご連絡ください。</p>
+
+          <p><i class="fas fa-map-marker-alt"></i> Chiba, Japan</p>
+          <p><i class="fas fa-envelope"></i> amanecdy@gmail.com</p>
+          <p><i class="fas fa-phone"></i> 080 7681 0521</p>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="text" placeholder="Subject" required />
+          <textarea placeholder="Your Message" required></textarea>
+
+          <button class="btn primary-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Aman Cdy — All Rights Reserved.</p>
+  </footer>
+</body>
+
 </html>

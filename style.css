@@ -153,20 +153,49 @@ nav {
   margin-bottom: 20px;
 }
 
+/* Social Icons Box */
 .social-icons {
   margin-top: 20px;
+  display: flex;
+  gap: 25px;
 }
 
-.social-icons a {
-  margin-right: 14px;
-  font-size: 24px;
-  color: #333;
+.social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.social-item i {
+  font-size: 30px;
+  color: #4a90e2;
   transition: 0.3s;
 }
 
-.social-icons a:hover {
-  color: #4a90e2;
+.social-item span {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
 }
+
+.social-item:hover i {
+  transform: translateY(-4px);
+  color: #3578c9;
+}
+
+.social-item:hover span {
+  color: #3578c9;
+}
+
+/* Responsive center alignment */
+@media (max-width: 600px) {
+  .social-icons {
+    justify-content: center;
+  }
+}
+
 
 .hero-img img {
   width: 320px;
